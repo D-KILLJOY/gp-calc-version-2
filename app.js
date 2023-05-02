@@ -83,6 +83,8 @@ function gp() {
 			gpDisp.style.color = "orange";
 		} else if (ans < 4.5) {
 			gpDisp.style.color = "yellow";
+		} else if (ans >= 4.5) {
+			gpDisp.style.color = "#58ee58";
 		}
 		ans = 0;
 	} else {
