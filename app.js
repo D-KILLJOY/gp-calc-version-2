@@ -87,7 +87,7 @@ function gp() {
 
 // !! MAIN LOGIIIIIC
 
-calculate.addEventListener("click", () => {
+const calcfunc = () => {
 	const unitLoad = document.querySelectorAll(".unit-load");
 	const grade = document.querySelectorAll(".grade");
 
@@ -119,4 +119,6 @@ calculate.addEventListener("click", () => {
 	multiply();
 	unitLoadArrSum = 0;
 	multipliedSum = 0;
-});
+};
+
+calculate.addEventListener("click", calcfunc);
