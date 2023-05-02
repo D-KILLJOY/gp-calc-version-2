@@ -117,6 +117,8 @@ calculateGp.addEventListener("click", () => {
 			alert(
 				"Please don't leave any field empty \n You can delete any unwanted field"
 			);
+		} else {
+			alert("Please input a valid grade \n You can use the help button ");
 		}
 
 		gradeArr.push(parseInt(gradeValue));
