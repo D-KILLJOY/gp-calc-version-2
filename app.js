@@ -1,5 +1,5 @@
-const addCourse = document.querySelector(".calculate");
-const calculateGp = document.querySelector(".add-course");
+const addCourse = document.querySelector(".add-course");
+const calculateGp = document.querySelector(".calculate");
 
 const unitLoad = document.querySelectorAll(".unit-load");
 const grade = document.querySelectorAll(".grade");
@@ -87,7 +87,7 @@ function gp() {
 
 // !! MAIN LOGIIIIIC
 
-const calcfunc = () => {
+calculateGp.addEventListener("click", () => {
 	const unitLoad = document.querySelectorAll(".unit-load");
 	const grade = document.querySelectorAll(".grade");
 
@@ -119,6 +119,4 @@ const calcfunc = () => {
 	multiply();
 	unitLoadArrSum = 0;
 	multipliedSum = 0;
-};
-
-calculateGp.addEventListener("click", calcfunc);
+});
