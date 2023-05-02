@@ -129,7 +129,11 @@ input {
 }
 
 .ack a {
-	color: var(--Strong-cyan);
+	color: var(--White);
+	text-decoration: none;
+	padding: 0.1rem 1rem;
+	border-radius: 0.5rem;
+	background-color: var(--Strong-cyan);
 }
 
 /* ! HELP */
