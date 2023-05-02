@@ -99,17 +99,17 @@ calculateGp.addEventListener("click", () => {
 	});
 
 	grade.forEach((i) => {
-		if (i.value === "a") {
+		if (i.value === "a" || i.value === "A") {
 			gradeValue = 5;
-		} else if (i.value === "b") {
+		} else if (i.value === "b" || i.value === "B") {
 			gradeValue = 4;
-		} else if (i.value === "c") {
+		} else if (i.value === "c" || i.value === "C") {
 			gradeValue = 3;
-		} else if (i.value === "d") {
+		} else if (i.value === "d" || i.value === "D") {
 			gradeValue = 2;
-		} else if (i.value === "e") {
+		} else if (i.value === "e" || i.value === "E") {
 			gradeValue = 1;
-		} else if (i.value === "f") {
+		} else if (i.value === "f" || i.value === "F") {
 			gradeValue = 0;
 		}
 
