@@ -1,5 +1,5 @@
 const addCourse = document.querySelector(".add-course");
-const calculate = document.querySelector(".calculate");
+const calculateGp = document.querySelector(".calculate");
 
 const unitLoad = document.querySelectorAll(".unit-load");
 const grade = document.querySelectorAll(".grade");
@@ -25,7 +25,7 @@ addCourse.addEventListener("click", () => {
 	const inputCont = document.createElement("div");
 	inputCont.classList.add("input-con");
 
-	inputCont.innerHTML = `<input type="tel" min="0" maxlength="1" class="unit-load" id="unit-load" placeholder="Unit Load" />
+	inputCont.innerHTML = `<input type="number" min="0" maxlength="1" class="unit-load" id="unit-load" placeholder="Unit Load" />
 					<input type="text" maxlength="1" class="grade" id="grade"  placeholder="Grade" />
 					<button class="del-btn">X</button>`;
 
@@ -121,4 +121,4 @@ const calcfunc = () => {
 	multipliedSum = 0;
 };
 
-calculate.addEventListener("click", calcfunc);
+calculateGp.addEventListener("click", calcfunc);
