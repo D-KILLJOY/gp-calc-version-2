@@ -1,5 +1,5 @@
-const addCourse = document.querySelector(".add-course");
-const calculateGp = document.querySelector(".calculate");
+const addCourse = document.querySelector(".calculate");
+const calculateGp = document.querySelector(".add-course");
 
 const unitLoad = document.querySelectorAll(".unit-load");
 const grade = document.querySelectorAll(".grade");
