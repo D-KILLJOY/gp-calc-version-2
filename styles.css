@@ -132,3 +132,56 @@ input {
 	color: var(--Strong-cyan);
 	text-decoration: none;
 }
+
+/* ! HELP */
+
+.help {
+	min-height: 100vh;
+	width: 100%;
+	max-width: 60rem;
+	padding: 2rem;
+	background-color: var(--Dark-grayish-cyan);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.help p {
+	margin: 1rem 0;
+}
+
+.close-btn {
+	width: 10rem;
+	height: 4rem;
+	border: none;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-top: 5rem;
+	font-size: 2rem;
+	font-weight: 700;
+	background-color: rgb(209, 55, 55);
+	color: var(--White);
+}
+
+.help-btn {
+	width: 15rem;
+	height: 4rem;
+	margin: 0 auto;
+	display: block;
+	border: none;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+	font-weight: 700;
+	background-color: rgb(233, 146, 64);
+	color: var(--White);
+}
+
+.d-none {
+	display: none;
+}
+/* ! HELP */

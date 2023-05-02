@@ -12,6 +12,10 @@ const totScore = document.querySelector(".tot-score");
 const totUnitLoad = document.querySelector(".tot-ul");
 const gpDisp = document.querySelector(".gp");
 
+const help = document.querySelector(".help");
+const helpBtn = document.querySelector(".help-btn");
+const closeBtn = document.querySelector(".close-btn");
+
 const remark = document.querySelector(".remark");
 const unitLoadArr = [];
 let unitLoadArrSum = 0;
@@ -80,6 +84,7 @@ function gp() {
 		} else if (ans < 4.5) {
 			gpDisp.style.color = "yellow";
 		}
+		ans = 0;
 	} else {
 		alert("something is missing");
 	}
@@ -90,9 +95,6 @@ function gp() {
 calculateGp.addEventListener("click", () => {
 	const unitLoad = document.querySelectorAll(".unit-load");
 	const grade = document.querySelectorAll(".grade");
-
-	unitLoadArr.splice(0);
-	gradeArr.splice(0);
 
 	unitLoad.forEach((i) => {
 		unitLoadArr.push(parseInt(i.value));
@@ -111,6 +113,10 @@ calculateGp.addEventListener("click", () => {
 			gradeValue = 1;
 		} else if (i.value === "f" || i.value === "F") {
 			gradeValue = 0;
+		} else if (i.value === "") {
+			alert(
+				"Please don't leave any field empty \n You can delete any unwanted field"
+			);
 		}
 
 		gradeArr.push(parseInt(gradeValue));
@@ -119,4 +125,20 @@ calculateGp.addEventListener("click", () => {
 	multiply();
 	unitLoadArrSum = 0;
 	multipliedSum = 0;
+
+	multiplied.splice(0);
+	unitLoadArr.splice(0);
+	gradeArr.splice(0);
+});
+
+//! HELP BTN
+
+helpBtn.addEventListener("click", () => {
+	help.classList.remove("d-none");
+	document.body.classList.add("no-scroll");
+});
+
+closeBtn.addEventListener("click", () => {
+	help.classList.add("d-none");
+	document.body.classList.remove("no-scroll");
 });
