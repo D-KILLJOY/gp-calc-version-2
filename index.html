@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GP - CALCULATOR</title>
+        <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="calc-body">
+			<section class="help">
+				
+				<p>
+					the unit load box accepts only numbers
+
+				</p>
+				<p>
+					the grade input box  accepts only <br>
+					A B C D E F
+				</p>
+			</section>
+			<div class="container">
+				<h2 class="gp-m">G.P <span class="gp">5</span></h2>
+                <p class="remark"></p>
+				<div class="input-con">
+					<input type="tel" min="0" maxlength="1" class="unit-load" id="unit-load" placeholder="Unit Load" />
+					<input type="text" maxlength="1" class="grade" id="grade"  placeholder="Grade" />
+					<button class="del-btn">X</button>
+				</div>
+			</div>
+			<button class="add-course">Add Course</button>
+            <div class="display">
+
+                <p>Total Score : <span class="tot-score"></span></p>
+                <p>Total U.L : <span class="tot-ul"></span></p>
+    
+                <button class="calculate">Calculate</button>
+                <p class="ack">
+                    Built with &#128151 by
+                    <a target="_blank" href="https://linktr.ee/didiauche">KILLJOY</a>
+                </p>
+            </div>
+            
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

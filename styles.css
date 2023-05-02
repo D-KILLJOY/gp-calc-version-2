@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Space Mono", monospace;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+
+	background-color: var(--Light-grayish-cyan);
+	color: var(--White);
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+
+:root {
+	font-size: 62.5%;
+
+	--Strong-cyan: hsl(172, 67%, 45%);
+
+	--Very-dark-cyan: hsl(183, 100%, 15%);
+	--Dark-grayish-cyan: hsl(186, 42%, 33%);
+	--Grayish-cyan: hsl(184, 14%, 56%);
+	--Light-grayish-cyan: hsl(184, 16%, 51%);
+	--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+	--White: hsl(0, 0%, 100%);
+}
+
+.calc-body {
+	max-width: 40rem;
+	margin: 4rem auto;
+	padding: 1rem 1rem 3rem;
+}
+
+.help p {
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.gp-m {
+	text-align: center;
+	margin: 1.5rem auto;
+	max-width: 20rem;
+	font-size: 2.6rem;
+	border: 2px solid white;
+}
+
+.gp {
+	color: rgb(88, 238, 88);
+}
+
+.input-con {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 2rem;
+}
+
+input {
+	width: 12rem;
+	height: 4rem;
+	padding: 0.7rem;
+	font-size: 1.7rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 0.5rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.del-btn {
+	width: 5rem;
+	height: 4rem;
+	border: none;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+	font-weight: 700;
+	background-color: rgb(209, 55, 55);
+	color: var(--White);
+}
+
+.add-course {
+	height: 4rem;
+	padding: 0.1rem 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+	background-color: var(--Strong-cyan);
+	color: var(--White);
+	margin-left: 2rem;
+}
+
+.calculate {
+	height: 4rem;
+	padding: 0.1rem 2rem;
+	border: none;
+	border-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.6rem;
+	font-weight: 700;
+	background-color: var(--Strong-cyan);
+	color: var(--White);
+	margin: 2rem auto;
+	display: block;
+}
+
+.display {
+	margin: 1rem 0 1rem 2rem;
+}
+
+.display p {
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
+}
+
+.ack {
+	text-align: center;
+	margin-top: 4rem;
+}
+
+.ack a {
+	color: var(--Strong-cyan);
+	text-decoration: none;
+}
