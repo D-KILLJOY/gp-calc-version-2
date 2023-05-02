@@ -17,6 +17,10 @@ body {
 	font-size: 1.4rem;
 }
 
+button {
+	cursor: pointer;
+}
+
 :root {
 	font-size: 62.5%;
 
